@@ -184,8 +184,7 @@ namespace RaiderzSkillTree
             ResetAllSkillTrees();
         }
 
-        // Properties for additional variables
-        // START
+        //~ Start properties for additional variables
         public int PhysicalDamageReduction
         {
             get
@@ -217,10 +216,9 @@ namespace RaiderzSkillTree
                 }
             }
         }
-        // STOP
+        //~ End properties for additional variables
 
-        // Properties for variables used in all tabs
-        // START
+        //~ Start properties for variables used in all tabs
         public string BaseSkillTree
         {
             get
@@ -560,11 +558,9 @@ namespace RaiderzSkillTree
                 }
             }
         }
-        // END
-        // Properties for variables used in all tabs
+        //~ End properties for variables used in all tabs
 
-        // Properties for variables local to Assassin's page
-        // START
+        //~ Start properties for variables local to Assassin's page
         public int ChaosPoints
         {
             get
@@ -948,11 +944,9 @@ namespace RaiderzSkillTree
                 }
             }
         }
-        // END
-        // Properties for variables local to Assassin's page
+        //~ End properties for variables local to Assassin's page
 
-        // Properties for variables local to Berserker's Page
-        // START
+        //~ Start properties for variables local to Berserker's Page
         public int CrushPoints
         {
             get
@@ -1320,11 +1314,9 @@ namespace RaiderzSkillTree
                 }
             }
         }
-        // END
-        // Properties for variables local to Berserker's Page
+        //~ End properties for variables local to Berserker's Page
 
-        // Properties for variables local to Cleric's Page
-        // START
+        //~ Start properties for variables local to Cleric's Page
         public int LightPoints
         {
             get
@@ -1756,11 +1748,9 @@ namespace RaiderzSkillTree
                 }
             }
         }
-        // END
-        // Properties for variables local to Cleric's Page
+        //~ End properties for variables local to Cleric's Page
 
-        // Properties for variables local to Defender's Page
-        // START
+        //~ Start properties for variables local to Defender's Page
         public int RuinPoints
         {
             get
@@ -2160,11 +2150,9 @@ namespace RaiderzSkillTree
                 }
             }
         }
-        // END
-        // Properties for variables local to Defender's Page
+        //~ End properties for variables local to Defender's Page
 
-        // Properties for variables local to Sorcerer's Page
-        // START
+        //~ Start properties for variables local to Sorcerer's Page
         public int FireArrowPoints
         {
             get
@@ -2548,11 +2536,8 @@ namespace RaiderzSkillTree
                 }
             }
         }
-        // END
-        // Properties for variables local to Sorcerer's Page
+        //~ End properties for variables local to Sorcerer's Page
 
-        // Local methods
-        // START
 
         // Reset all points
         public void ResetAllPoints()
@@ -2570,7 +2555,7 @@ namespace RaiderzSkillTree
             ResetSorcererTabPoints();
         }
 
-        // Global Tab
+        // Reset Global Tab
         public void ResetGlobalTabPoints()
         {
             BaseSkillTree = "";
@@ -2583,7 +2568,7 @@ namespace RaiderzSkillTree
             SorcererSkillPoints = 0;
         }
 
-        // Assassin Tab
+        // Reset Assassin Tab
         public void ResetAssassinTabPoints()
         {
             ChaosPoints = 0;
@@ -2612,7 +2597,7 @@ namespace RaiderzSkillTree
             ColdBloodedPoints = 0;
         }
 
-        // Berserker Tab
+        // Reset Berserker Tab
         public void ResetBerserkerTabPoints()
         {
             CrushPoints = 0;
@@ -2640,7 +2625,7 @@ namespace RaiderzSkillTree
             ZerkBloodPoints = 0;
         }
 
-        // Cleric Tab
+        // Reset Cleric Tab
         public void ResetClericTabPoints()
         {
             LightPoints = 0;
@@ -2672,7 +2657,7 @@ namespace RaiderzSkillTree
             NimblePoints = 0;
         }
 
-        // Defender Tab
+        // Reset Defender Tab
         public void ResetDefenderTabPoints()
         {
             RuinPoints = 0;
@@ -2702,7 +2687,7 @@ namespace RaiderzSkillTree
             RetributionPoints = 0;
         }
 
-        // Sorcerer Tab
+        // Reset Sorcerer Tab
         public void ResetSorcererTabPoints()
         {
             FireArrowPoints = 0;
@@ -5818,11 +5803,8 @@ namespace RaiderzSkillTree
                     ImbalanceButton.IsEnabled = false;
             }
         }
-        // END
-        // Local methods
 
-        // Disabling Mastery
-        // START
+        //~ Start methods to disable mastery
         public void DisableAssassinMastery()
         {
             PursuitLvl1.IsEnabled = false;
@@ -5885,8 +5867,7 @@ namespace RaiderzSkillTree
             DynamicsLvl2.IsEnabled = false;
             AffinityLvl3.IsEnabled = false;
         }
-        // END
-        // Disabling Mastery
+        //~ End methods to disable mastery
 
         // NotifyPropertyChanged method to notify DataBinding about property update
         public event PropertyChangedEventHandler PropertyChanged;
@@ -5897,8 +5878,7 @@ namespace RaiderzSkillTree
                 this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
         }
 
-        // Commands
-        // START
+        //~ Begin commands
         private void ResetAllTrees_CanExecute(object sender, CanExecuteRoutedEventArgs e)
         {
             e.CanExecute = true;
@@ -7057,8 +7037,7 @@ namespace RaiderzSkillTree
             else
                 return 0;
         }
-        // END
-        // Commands
+        //~ End commands
     }
 
     public static class CustomCommands
