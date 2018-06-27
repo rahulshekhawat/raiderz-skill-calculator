@@ -1,6 +1,6 @@
 # RaiderZ Skill Calculator
 
-This repository contains the source code for non-java version of RaiderZ Skill Calculator that is compatible with WildRaiderZ's Level 50 skill cap.
+This repository contains the source code for non-java version of RaiderZ Skill Calculator that is compatible with [WildRaiderZ](http://www.wildraiderz.com/)'s Level 50 skill cap.
 
 ### Features and improvements over Java version:
 * Available points are 50 to match WildRaiderZ's level 50 cap instead of 40 points.
